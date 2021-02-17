@@ -9,9 +9,9 @@ main, .nav-header{
     margin-left: auto;
     margin-right: auto;
 }
-* a:visited, a{
+.link-nav a:visited, a{
     text-decoration: none;
-    color:black;
+    color: black;
 }
 .nav-header{
     align-items: center;
@@ -28,12 +28,14 @@ main, .nav-header{
     align-items: center;
     font-weight: bold;
     text-decoration: none;
-    border-top: solid 2px transparent;
+    border-top: solid 3px transparent;
     margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .link-nav:hover , .link-nav-register:hover{
-    border-top: solid 2px #0065fc;
-    padding-top: 2.7rem;
+    border-top: solid 3px #0065fc;
+    padding-top: 2.8rem;
     color: #0065fc;
 }
 .link-register{
@@ -71,6 +73,9 @@ main, .nav-header{
     cursor: pointer;
     box-sizing: border-box;
     height: 220px;
+}
+.hosting-card:hover {
+    transform: scale(1.01);
 }
 .hosting-card img{
     height: 7rem;
@@ -122,47 +127,80 @@ main, .nav-header{
     color: black;
     font-weight: bold;
 }
-
-.most_popular-figure{
-    padding:0.275rem;
-    margin: 0;
-}
-.most_popular-figure figcaption{
-    padding-left: 8px;
-}
-
 .most_popular{
     display: grid;
-}
-.most_popular-container{
-    display: grid;
-    column-gap: 20px;
-    row-gap: 20px;
+    row-gap: 2rem;
+    align-items: start;
+    grid-template-rows: auto repeat(3, 1fr);
     background-color: #F2F2F2;
-    border-radius: 25px;
+    border-radius: 1.5rem;
     padding: 2rem;
+}
+.most_popular-card-h3{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/-1;
 }
 .most_popular-card{
     background-color: white;
     padding: 0.375rem;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
+    height: 100%;
 }
-.most_popular-card img{
-    float: left;
-    height: 7rem;
-    object-fit: cover;
-    max-width: 100%;
+.most_popular-card:hover {
+    transform: scale(1.01);
+}
+.most_popular-card-content{
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
+}
+.most_popular-img-container{
+    position: relative;
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+}
+.most_popular-img{
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
     width: 100%;
-    max-height: 100%;
-    border-radius: 1rem 1rem 0 0;
+    height: 100%;
+    object-fit: cover;
+}
+.most_popular-description-container{
+    display: flex;
+    flex-direction: column;
+}
+.most_popular-card-h3{
+    margin: 0.25rem 0.75rem 0 0.75rem;
+}
+.most_popular-card-p{
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+.most_popular-space{
+    flex: 1;
+}
+.most_popular-stars{
+    margin: 0 0.75rem 0.25rem 0.75rem;
+}
+.rankstars[data-active=true] {
+    color: #0065FC;
+}
+.rankstars[data-active=false] {
+    color: #d9d9d9;
 }
 .activity {
     display: grid;
     column-gap: 2rem;
-    margin: 4rem 0;
+    margin: 4rem 1rem;
 }
 .activity-header {
     grid-column: 1/-1;
