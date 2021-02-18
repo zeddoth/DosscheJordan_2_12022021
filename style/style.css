@@ -294,7 +294,13 @@ main, .nav-header{
     .most_popular{
         grid-template-columns: 1fr;
         grid-template-rows: auto repeat(3, 9rem);
+    }
 }
+@media (max-width: 650px){
+    .hosting-card-container{
+        grid-template-columns: 0.9fr;
+        grid-template-rows: auto repeat(6, 1fr);
+    }
 }
 
 
@@ -458,7 +464,13 @@ footer {
 .footer-a:hover {
     text-decoration: underline;
 }
-
+/* PROBLEM FOOTER WITH 4K */
+@media (max-height: 2160px){
+    footer{
+        margin-top: 200px;
+    }
+}
+/* RESPONSIVE FOOTER  */
 @media (max-width: 750px) {
     .container-footer {
         flex-direction: column;
