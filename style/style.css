@@ -47,6 +47,30 @@ main, .nav-header{
     display: flex;
     align-items: center;
 }
+.search-icon-info{
+    color: #0065fc;
+}
+.container-icon-info{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100%;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.7rem;
+    border: solid 1px rgb(219, 219, 219);
+}
+.filter-h2{
+    padding-right: 1rem;
+}
+.filter-h2-checkbox{
+    display: flex;
+    align-items: center;
+}
 #hosting{
     display: grid;
     grid-template-columns: 6fr 3fr;
