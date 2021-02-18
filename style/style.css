@@ -199,6 +199,11 @@ main, .nav-header{
     color: black;
     font-weight: bold;
 }
+@media (max-width:925px){
+    .hosting-card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 .most_popular{
     display: grid;
     row-gap: 2rem;
@@ -263,6 +268,36 @@ main, .nav-header{
 .most_popular-stars{
     margin: 0 0.75rem 0.25rem 0.75rem;
 }
+@media (max-width: 1440px) {
+    .most_popular {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 10rem;
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+    .most_popular-header{
+        grid-column: 1/-1;
+    }
+}
+@media (max-width: 1100px){
+    .most_popular {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 10rem;
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+    .most_popular-header{
+        grid-column: 1/-1;
+    }
+}
+@media (max-width: 1000px){
+    .most_popular{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(3, 9rem);
+}
+}
+
+
 .rankstars[data-active=true] {
     color: #0065FC;
 }
