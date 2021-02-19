@@ -94,22 +94,46 @@ main, .nav-header{
     border-radius: 100%;
     min-width: 1.5rem;
     min-height: 1.5rem;
-    max-width: 1.5rem;
-    max-height: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 0.7rem;
-    border: solid 1px rgb(219, 219, 219);
+    border: solid 1px #ebe9e9;
+}
+.container-filter-global{
+    display: flex;
+    flex-wrap: wrap;
 }
 .filter-h2{
     padding-right: 1rem;
 }
-.filter-h2-checkbox{
+.container-filter{
     display: flex;
     align-items: center;
+    text-align: center;
+    border: 1px solid #ebe9e9;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
-
+.container-filter-icon{
+    height: 3rem;
+    width: 3rem;
+    background-color: #deebff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: -1px;
+}
+.filter-info{
+    margin-left: 1rem;
+    margin-right: 1.2rem;
+}
+.icon-filter{
+    color: #0065fc;
+}
 #hosting{
     display: grid;
     grid-template-columns: 6fr 3fr;
