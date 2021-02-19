@@ -27,7 +27,6 @@ main, .nav-header{
 }
 .link-nav, .link-nav-register{
     align-items: center;
-    font-weight: bold;
     text-decoration: none;
     border-top: solid 3px transparent;
     margin-left: 20px;
@@ -45,45 +44,55 @@ main, .nav-header{
     color: #0065fc;
 }
 .search-box{
-    border:solid 1px #ebe9e9;
+    border-top: solid 1px #ebe9e9;
+    border-bottom: solid 1px #ebe9e9;
+    border-right: none;
+    border-left: none;
     font-weight: bold;
     padding-left: 15px;
 }
 .search-input{
     display: flex;
 }
+.search-h2{
+    margin-bottom: 0;
+}
+.search-p{
+    margin-top: 10px;
+}
 .marker-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ebe9e9;
-    height: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    background: #f3f2f2;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 50px;
 }
 .search-box{
-    height: 40px;
     font-family: Raleway, Arial, sans-serif ;
     font-weight: 800;
+    font-size: 16px;
 }
 .search-button{
     font-family: Raleway, Arial, sans-serif;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: bold;
-    background:#0065fc;
-    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    background:#1873fc;
     color:white;
-    border-top-right-radius:12px ;
-    border-bottom-right-radius:12px ;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
     border: transparent;
+    font-size:17px;
 
 }
 .search-info-disponibility{
     display: flex;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 .search-icon-info{
     color: #0065fc;
@@ -103,19 +112,28 @@ main, .nav-header{
 .container-filter-global{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
 }
 .filter-h2{
-    padding-right: 1rem;
+    padding-right: 2rem;
+    margin-top: 0;
+    font-size: 18px;
+    padding-left: 0.5rem;
 }
 .container-filter{
     display: flex;
     align-items: center;
     text-align: center;
-    border: 1px solid #ebe9e9;
+    border: 2px solid #ebe9e9;
     border-radius: 25px;
     font-weight: bold;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+.container-filter:hover{
+    background-color: #f4f8ff;
+    transform: scale(1.01);
 }
 .container-filter-icon{
     height: 3rem;
@@ -144,6 +162,9 @@ main, .nav-header{
     grid-template-columns: 1fr;
     row-gap: 2rem;
     }
+}
+.hosting-h2{
+    font-weight: 800;
 }
 .hosting-header{
     grid-column: 1/-1;
@@ -237,6 +258,14 @@ main, .nav-header{
     border-radius: 1.5rem;
     padding: 2rem;
 }
+.most_popular-h2{
+    font-weight: 800;
+}
+.most_popular-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .most_popular-card-h3{
     margin: 0;
     display: flex;
@@ -326,8 +355,6 @@ main, .nav-header{
         grid-template-rows: auto repeat(6, 1fr);
     }
 }
-
-
 .rankstars[data-active=true] {
     color: #0065FC;
 }
@@ -418,52 +445,6 @@ main, .nav-header{
     grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
     }
 }
-/* footer{
-    background-color: red;
-    width: 100%;
-}
-@media (max-width:3840px) and (max-height:2160px){
-    footer{
-        margin-top: 200px;
-    }
-}
-
-.container-footer{
-    display: flex;
-    width: 1440px;
-    max-width: 100%;
-    margin: auto;
-    box-sizing: border-box;
-}
-.about-footer, .our-hosting-footer, .assistance-footer{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding: 2rem 2rem;
-}
-.about-footer a:hover, .our-hosting-footer a:hover, .assistance-footer a:hover{
-    color: #0065fc;
-}
-.footer-a{
-    margin: 0.5rem 0;
-    display: block;
-}
-
-@media (max-width: 900px){
-    .container-footer{
-        flex-direction: column;
-        width: 100%;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-    }
-    .about-footer, .our-hosting-footer, .assistance-footer{
-        width: 100%;
-        padding: 0;
-        margin: 1rem 0;
-    }
-} */
 
 footer {
     background-color: #F2F2F2;
