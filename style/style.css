@@ -172,7 +172,6 @@ main, .nav-header{
 .hosting-card-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    min-width: 600px;
     column-gap: 2rem;
     row-gap: 2rem;
     background-color: #F2F2F2;
@@ -351,8 +350,8 @@ main, .nav-header{
 }
 @media (max-width: 650px){
     .hosting-card-container{
-        grid-template-columns: 0.9fr;
         grid-template-rows: auto repeat(6, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 .rankstars[data-active=true] {
