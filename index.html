@@ -12,17 +12,17 @@
     <header class="nav-header">
         <div class="logo-register">
             <img class="logo-reservia" src="/images/logo/Reservia.svg" alt="logo-reservia"/>
-            <a class="link-register" href="#">S'inscrire</a>
+            <a class="link-register-mobile" href="#">S'inscrire</a>
         </div>
         <nav class="navbar">
-            <a class="link-nav" href="#hosting">Hébergements</a>
-            <a class="link-nav" href="#activity">Activités</a>
-            <a class="link-nav-register" href="#">S'inscrire</a>
+            <a class="link-nav" href="#hosting" data-active="true">Hébergements</a>
+            <a class="link-nav" href="#activity" data-active="false">Activités</a>
+            <a class="link-nav-register" href="#" data-active="false">S'inscrire</a>
         </nav>
     </header>
     <!--MAIN CONTENT-->
     <main>
-        <!--SEARCH-->
+        <!-- SEARCH-->
         <section class="search">
             <div class="search-header">
                 <h2 class="search-h2">Trouvez votre hébergement pour des vacances de rêve</h2>
@@ -32,6 +32,7 @@
                 <div class="marker-container"><i class="fas fa-map-marker-alt search-marker"></i></div>
                 <input class="search-box" type="search" value="Marseille, France">
                 <button class="search-button">Rechercher</button>
+                <button class="search-button-mobile"><i class="fas fa-search"></i></button>
             </div>
                 <div class="container-filter-global">
                     <div class="filter-h2-checkbox">
