@@ -416,9 +416,13 @@ main, .nav-header{
         grid-template-rows: auto 10rem;
         row-gap: 2rem;
         column-gap: 2rem;
+        order: 1;
     }
     .most_popular-header{
         grid-column: 1/-1;
+    }
+    .hosting-card-container{
+        order: 2;
     }
 }
 @media (max-width: 1100px){
@@ -439,10 +443,25 @@ main, .nav-header{
     }
 }
 @media (max-width: 650px){
+    main{
+        padding:0;
+    }
+    .search{
+        padding: 1rem;
+    }
     .hosting-card-container{
         grid-template-rows: auto repeat(6, 1fr);
         grid-template-columns: 1fr;
+        padding: 1rem;
+        background: none;
+        order: 2;
     }
+    .most_popular{
+        padding: 1rem;
+        border-radius: 0;
+        order: 1;
+    }
+
 }
 .rankstars[data-active=true] {
     color: #0065FC;
