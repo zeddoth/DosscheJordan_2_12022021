@@ -34,20 +34,15 @@ main, .nav-header{
     align-items: center;
     text-decoration: none;
     border-top: solid 3px transparent;
-    margin-left: 20px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 2.6rem;
 }
-.link-nav[data-active="true"]{
+.link-nav:hover , .link-nav-register:hover{
     border-top: solid 3px #0065fc;
     padding-top: 2.6rem;
     color: #0065fc;
-}
-.link-nav[data-active="false"]:hover , .link-nav-register[data-active="false"]:hover{
-    border-top: solid 3px #0065fc;
-    padding-top: 2.6rem;
-    color: #0065fc;
+    transition: 0.3s ease-in-out;
 }
 .link-register{
     align-items: center;
