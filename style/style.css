@@ -38,6 +38,7 @@ main, .nav-header{
     padding-right: 20px;
     padding-top: 2.6rem;
 }
+/* HOVER */
 .link-nav:hover , .link-nav-register:hover{
     border-top: solid 3px #0065fc;
     padding-top: 2.6rem;
@@ -557,18 +558,9 @@ footer {
     .nav-header{
         flex-direction: column;
         flex-wrap: nowrap;
+        padding-bottom: 0;
     }
-    .link-nav[data-active="true"]{
-        border-top: hidden;
-        border-bottom: solid 3px #0065fc;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 1rem;
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-    }
-    .link-nav[data-active="false"]{
+    .link-nav{
         border-top: hidden;
         border-bottom: solid 3px #d8d8d8;
         margin:0;
@@ -578,7 +570,7 @@ footer {
         display: flex;
         justify-content: center;
     }
-    .link-nav[data-active="false"]:hover , .link-nav-register[data-active="false"]:hover{
+    .link-nav:hover , .link-nav-register:hover{
         padding: 0;
         padding-bottom: 1rem;
         border-top: hidden;
