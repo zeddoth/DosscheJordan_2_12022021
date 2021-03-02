@@ -574,8 +574,12 @@ footer {
     display: flex;
     justify-content: center;
   }
-  .link-nav:hover,
   .link-nav-register:hover {
+    border-top: solid 3px transparent;
+    transition: none;
+    text-decoration: underline;
+  }
+  .link-nav:hover {
     padding: 0;
     padding-bottom: 1rem;
     border-top: hidden;
